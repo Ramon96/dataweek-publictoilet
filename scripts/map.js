@@ -7,9 +7,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoieWFiYnkiLCJhIjoiY2szc3RhbGZxMDl1ZDNobzRiOGdlMTdxNCJ9.8o_CuS9mw7IAMoBbH2zvtQ'
 }).addTo(mymap);
 
-var toiletLayer = new L.GeoJSON.AJAX("/geojson/OPENBARE_TOILETTEN.json");   
-var metrolineLayer = new L.GeoJSON.AJAX("/geojson/TRAMMETRO_LIJNEN_2019.json");
-var metrostopLayer = new L.GeoJSON.AJAX("/geojson/TRAMMETRO_PUNTEN_2019.json");
+var toiletLayer = new L.GeoJSON.AJAX("geojson/OPENBARE_TOILETTEN.json");   
+var metrolineLayer = new L.GeoJSON.AJAX("geojson/TRAMMETRO_LIJNEN_2019.json");
+var metrostopLayer = new L.GeoJSON.AJAX("geojson/TRAMMETRO_PUNTEN_2019.json");
 
 toiletLayer.addTo(mymap);
 metrolineLayer.addTo(mymap);
